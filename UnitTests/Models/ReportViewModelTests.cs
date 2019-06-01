@@ -21,13 +21,13 @@ namespace UnitTests.Models
         }
 
         [TestMethod]
-        public void LogViewModel_Get_Default_Should_Pass()
+        public void ReportViewModel_NumberOfUsers_Get_Default_Should_Pass()
         {
             // Arrange
-            var myTest = new LogViewModel();
+            var myTest = new ReportViewModel();
 
             // Act
-            var result = myTest.LogList;
+            var result = myTest.NumberOfUsers; 
 
             // Assert
             Assert.IsNotNull(result);
