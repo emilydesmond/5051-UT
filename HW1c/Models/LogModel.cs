@@ -60,8 +60,8 @@ namespace HW1c.Models
                 return false;
             }
 
-            // Don't update the ID, leave the old on in place
-            ID = data.ID;
+            // Don't update the ID, leave the old on in place, so commenting out this update
+            // ID = data.ID;
 
             // Update all the other fields
             EventType = data.EventType;
