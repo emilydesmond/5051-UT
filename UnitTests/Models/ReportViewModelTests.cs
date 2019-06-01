@@ -9,15 +9,14 @@ namespace UnitTests.Models
     public class ReportViewModelTests
     {
         [TestMethod]
-        public void LogViewModel_Instantiate_Default_Should_Pass()
+        public void ReportViewModel_Instantiate_Default_Should_Pass()
         {
             // Arrange
 
             // Act
-            var result = new LogViewModel();
 
             // Assert
-            Assert.IsNotNull(result);
+    
         }
 
         [TestMethod]
