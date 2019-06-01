@@ -34,19 +34,18 @@ namespace UnitTests.Models
         }
 
         [TestMethod]
-        public void LogViewModel_Set_Default_Should_Pass()
+        public void ReportViewModel_NumberOfUsers_Set_Default_Should_Pass()
         {
             // Arrange
-            var myTest = new LogViewModel();
-            var myList = new List<LogModel>();
-            myList.Add(new LogModel { PhoneID = "Phone" });
+            var myTest = new ReportViewModel();
+            int myTestNumUsers = 5; 
 
             // Act
-            myTest.LogList = myList;
-            var result = myTest.LogList;
+            myTest.NumberOfUsers = myTestNumUsers;
+            var result = myTest.NumberOfUsers;
 
             // Assert
-            Assert.AreEqual("Phone", result[0].PhoneID);
+            Assert.AreEqual(5, result);
         }
     }
 }
